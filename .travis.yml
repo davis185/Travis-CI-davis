@@ -2,3 +2,9 @@ langauge: node_js
 
 install: skip
 script: skip
+deploy:
+  provider: azure_web_apps
+  username: <username>
+  password: <encrypted password>
+  site: <site>
+  edge: true # opt in to dpl v2
